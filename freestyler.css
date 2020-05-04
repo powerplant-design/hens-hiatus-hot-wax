@@ -290,7 +290,7 @@ h4 {
 
 .contact__call-number {
   font-family: var(--font-go-soul);
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 .contact__form {
@@ -495,7 +495,7 @@ footer {
     text-align: center;
   }
   .contact__call-number {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 /*# sourceMappingURL=freestyler.css.map */
