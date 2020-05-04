@@ -76,6 +76,7 @@ h4 {
     flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 2rem;
+    animation: fadein 800ms forwards;
 
     &__logo {
         width: 100%;
@@ -104,16 +105,31 @@ h4 {
     
 }
 
+@keyframes fadein {
+    0% { 
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    50% { opacity: 0;}
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hero {
-    // background-color: var(--red);
-    background-image: linear-gradient(var(--red), white), url("img/hhh-snow-mbl.gif");
-    background-blend-mode: screen;
+    background-image:url("img/hhh-snow-mbl.gif");
     background-size: cover;
     padding-bottom: 6rem;
     
     &__content {
         text-align: center;
         padding: 1rem;
+        opacity: 1;
+        animation: fadein 800ms forwards;
+        // animation-name: fadein;
+        // animation-duration: 800ms;
+        // animation-direction: forward;
     }
 
     &__title {
@@ -297,8 +313,7 @@ footer {
 @media (min-width: 600px) {
 
     .hero {
-        background-color: var(--red);
-        background-image: linear-gradient(var(--red), white), url("img/hhh-snow-dsk.gif");
+        background-image:url("img/hhh-snow-dsk.gif");
     }
 
     .container {
