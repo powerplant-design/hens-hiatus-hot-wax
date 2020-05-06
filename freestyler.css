@@ -254,7 +254,7 @@ h4 {
 .delivery__img-box {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  margin-bottom: -13rem;
+  margin-bottom: -8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
