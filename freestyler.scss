@@ -80,8 +80,8 @@ h4 {
 
     &__logo {
         width: 100%;
-        max-width: 180px;
-        margin-bottom: 1rem;
+        max-width: 140px;
+        margin-bottom: 0.6rem;
     }
 }
 
@@ -120,31 +120,53 @@ h4 {
 .hero {
     background-image:url("img/hhh-snow-mbl.gif");
     background-size: cover;
-    padding-bottom: 6rem;
+    padding-bottom: 0rem;
     
     &__content {
         text-align: center;
         padding: 1rem;
         opacity: 1;
         animation: fadein 800ms forwards;
-        // animation-name: fadein;
-        // animation-duration: 800ms;
-        // animation-direction: forward;
     }
 
     &__title {
-        font-size: 3.2rem;
-        line-height: 1.2;
+        font-size: 3rem;
+        line-height: 1.1;
+        margin: 0.6rem 0
+    }
+
+    &__sun-box {
+        margin: 0 auto;
+        max-width: 300px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
     }
 
     &__info {
-        font-size: 1.2rem;
+        color: whitesmoke !important;        
+        max-width: 80%;
+        font-size: 1.4rem;
+        line-height: 1.3;
         color: var(--grey-dark);
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        z-index: 666;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+    
+    &__sun {
+        margin-left: 6px;
+        grid-column: 1 / -1;
+        grid-row: 1 / -1;
+        
     }
 }
 
 #solutions {
-    padding-top: 5.8rem;
+    padding-top: 4rem;
 }
 .solutions {
     background-image: url("/img/hhh-bg.jpg");
@@ -197,7 +219,7 @@ h4 {
 
     &__img-box {
         transform: translateY(-50%);
-        margin-bottom: -8rem;
+        margin-bottom: -13rem;
         display: flex;
         justify-content: center;
         align-items: flex-start;
@@ -331,7 +353,7 @@ footer {
     }
 
     .header {
-        margin-top: 1rem;
+        // margin-top: 1rem;
         justify-content: space-between;
         align-items: center;
         &__logo {
@@ -365,17 +387,21 @@ footer {
             margin: 0 auto;
         }
         &__title {
-            font-size: 5.4rem;
+            font-size: 4rem;
             letter-spacing: 2px;
             line-height: 1;
-            margin: 2rem 0 4rem 0;
+            margin: 0 0 1.4rem 0;
             // max-width: 70%;
         }
 
+        &__sun-box {
+            max-width: 420px;
+        }
         &__info {
-            padding: 0 6rem;
+            // padding: 0 6rem;
             font-size: 1.4rem;
         }
+
     }
 
     #solutions {
@@ -396,6 +422,7 @@ footer {
             transition: transform 400ms ease-out;
 
             &:hover {
+                cursor: pointer;
                 transform: scale(1.05);
             }
         }
