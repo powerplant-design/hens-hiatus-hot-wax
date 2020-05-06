@@ -501,10 +501,9 @@ footer {
   .delivery__img-box {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    margin-top: 2rem;
   }
   .delivery__img {
-    max-width: 100%;
+    max-width: 90%;
   }
   .delivery__fine-print {
     max-width: 80%;
